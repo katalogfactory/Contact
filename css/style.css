@@ -1,0 +1,163 @@
+  * {
+  padding: 0;
+  margin: 0;
+        }
+body {font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Tahoma, Serif;
+  color: #263238;
+}
+
+.maps{
+  height: auto;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  border: 2px #000;
+}
+
+.maps row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.maps-img img{
+padding-top: 10px;
+height: 100%;
+width: 100%;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.maps-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+    display: flex;
+    font-size: 11px;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+ .address {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  column-count: 2;
+  gap: 10px;
+}
+.address h1,.contact h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  column-count: 2;
+  flex: 3;
+}
+  nav {
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10px;
+}
+nav ul {
+display: inline-block;
+list-style: none;
+margin: 0;
+padding: 0px 15px;
+}
+
+nav li {
+display: inline;
+align-items: end;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 0px 15px;
+}
+nav h1 {
+    font-size:17px;
+    color: #ffffff;
+    margin-right: auto;
+}
+h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 600px)
+  nav {
+    flex-direction: row; /* Mengubah arah menjadi kolom */
+  nav ul {
+    flex-direction: row-reverse; /* Mengubah daftar menjadi kolom */
+    padding-top: 0rem; /* Padding atas */
+  }
+  }
+  nav li {
+    padding: 0.5rem 0; /* Padding untuk item */
+    font-size: 14px;
+  }
